@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMBER — Ресторан высокой кухни</title>
+  <meta name="description" content="EMBER — ресторан высокой кухни. Где огонь встречается с мастерством." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">EMBER</a>
+      <ul class="nav__links">
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#reservation">Бронирование</a></li>
+      </ul>
+      <a href="#reservation" class="nav__cta">Забронировать</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__photo">
+      <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1920&q=80" alt="" onerror="this.onerror=null;this.src='assets/hero-bg.svg'" />
+    </div>
+    <div class="hero__content">
+      <span class="hero__eyebrow reveal" data-delay="0">Fine dining · Est. 2018</span>
+      <h1 class="hero__title reveal" data-delay="200">EMBER</h1>
+      <p class="hero__tagline reveal" data-delay="400">Where fire meets craft</p>
+      <p class="hero__subtitle reveal" data-delay="600">
+        Атмосферный ресторан высокой кухни, где каждое блюдо —<br />
+        результат многолетнего поиска идеального вкуса.
+      </p>
+      <a href="#reservation" class="btn btn--gold reveal" data-delay="800">
+        Забронировать стол
+      </a>
+    </div>
+    <div class="hero__scroll">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about__grid">
+      <div class="about__image reveal">
+        <div class="about__frame"></div>
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=900&q=80" alt="Блюдо EMBER" onerror="this.onerror=null;this.src='assets/about.svg'" />
+      </div>
+      <div class="about__text">
+        <span class="section__eyebrow reveal">О ресторане</span>
+        <h2 class="section__title reveal">Философия огня</h2>
+        <p class="about__lead reveal">
+          EMBER — это не просто ресторан. Это пространство, где традиции
+          высокой кухни встречаются с авторским видением шефа
+          <strong>Алексея Воронцова</strong>. Каждое блюдо рождается в огне,
+          проходит через руки мастера и превращается в произведение искусства.
+        </p>
+        <p class="about__body reveal">
+          Мы верим, что настоящая кухня — это диалог между поваром и гостем.
+          Поэтому наш зал рассчитан всего на 85 мест: чтобы каждый визит был
+          личным, тёплым и запоминающимся.
+        </p>
+        <div class="stats">
+          <div class="stat reveal">
+            <span class="stat__number">12</span>
+            <span class="stat__label">Лет опыта</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__number">8</span>
+            <span class="stat__label">Наград</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__number">85</span>
+            <span class="stat__label">Мест в зале</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <span class="section__eyebrow reveal center">Наша кухня</span>
+      <h2 class="section__title reveal center">Меню</h2>
+      <div class="menu__tabs reveal">
+        <button class="menu__tab is-active" data-tab="appetizers">Закуски</button>
+        <button class="menu__tab" data-tab="mains">Основные</button>
+        <button class="menu__tab" data-tab="desserts">Десерты</button>
+      </div>
+
+      <div class="menu__grid" id="menu-grid">
+        <!-- cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <span class="section__eyebrow reveal center">Атмосфера</span>
+      <h2 class="section__title reveal center">Галерея</h2>
+      <p class="gallery__lead reveal center">
+        Загляните внутрь EMBER — момент, запечатлённый между подачей и ожиданием.
+      </p>
+
+      <div class="gallery__grid">
+        <figure class="gallery__item gallery__item--tall reveal">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80" alt="Стейк на гриле" onerror="this.onerror=null;this.src='assets/dish-1.svg'" />
+          <figcaption>Стейк на углях</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80" alt="Бокал вина" onerror="this.onerror=null;this.src='assets/dish-2.svg'" />
+          <figcaption>Винная карта</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Интерьер ресторана" onerror="this.onerror=null;this.src='assets/dish-3.svg'" />
+          <figcaption>Наш зал</figcaption>
+        </figure>
+        <figure class="gallery__item gallery__item--tall reveal">
+          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=900&q=80" alt="Десерт" onerror="this.onerror=null;this.src='assets/dish-4.svg'" />
+          <figcaption>Десерты шефа</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHEF QUOTE -->
+  <section class="quote" id="quote">
+    <div class="container quote__inner reveal">
+      <div class="quote__line"></div>
+      <blockquote class="quote__text">
+        «Огонь — это не просто температура.<br />
+        Это философия приготовления.»
+      </blockquote>
+      <p class="quote__author">— Алексей Воронцов, шеф-повар</p>
+      <div class="quote__line"></div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section class="reservation" id="reservation">
+    <div class="container reservation__grid">
+      <div class="reservation__info">
+        <span class="section__eyebrow reveal">Свяжитесь с нами</span>
+        <h2 class="section__title reveal">Забронировать стол</h2>
+        <p class="reservation__lead reveal">
+          Мы принимаем гостей ежедневно. Для особых случаев рекомендуем
+          бронировать стол заранее.
+        </p>
+
+        <ul class="contacts reveal">
+          <li>
+            <span class="contacts__label">Адрес</span>
+            <span>ул. Большая Никитская, 12, Москва</span>
+          </li>
+          <li>
+            <span class="contacts__label">Телефон</span>
+            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+          </li>
+          <li>
+            <span class="contacts__label">Email</span>
+            <a href="mailto:hello@ember.rest">hello@ember.rest</a>
+          </li>
+          <li>
+            <span class="contacts__label">Часы работы</span>
+            <span>Ежедневно: 18:00 — 00:00</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="form reveal" id="reservation-form" novalidate>
+        <div class="form__row">
+          <label class="form__field">
+            <span>Имя</span>
+            <input type="text" name="name" required placeholder="Ваше имя" />
+          </label>
+          <label class="form__field">
+            <span>Телефон</span>
+            <input type="tel" name="phone" required placeholder="+7 (___) ___-__-__" />
+          </label>
+        </div>
+        <div class="form__row">
+          <label class="form__field">
+            <span>Дата</span>
+            <input type="date" name="date" required />
+          </label>
+          <label class="form__field">
+            <span>Время</span>
+            <input type="time" name="time" required />
+          </label>
+        </div>
+        <label class="form__field">
+          <span>Гостей</span>
+          <select name="guests" required>
+            <option value="">Выберите количество</option>
+            <option value="1">1 гость</option>
+            <option value="2">2 гостя</option>
+            <option value="3">3 гостя</option>
+            <option value="4">4 гостя</option>
+            <option value="5">5 гостей</option>
+            <option value="6">6 и более</option>
+          </select>
+        </label>
+        <button type="submit" class="btn btn--gold btn--wide">Забронировать</button>
+        <p class="form__status" id="form-status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#hero" class="footer__logo">EMBER</a>
+      <ul class="footer__socials">
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        <li><a href="#" aria-label="TripAdvisor">TripAdvisor</a></li>
+      </ul>
+      <p class="footer__copy">© 2026 EMBER Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

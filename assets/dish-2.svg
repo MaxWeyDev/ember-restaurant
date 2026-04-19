@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Бокал вина">
+  <defs>
+    <radialGradient id="bg2" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#2a1a10"/>
+      <stop offset="100%" stop-color="#0c0a08"/>
+    </radialGradient>
+    <linearGradient id="wine" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#8a1a2a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#4a0a14"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#f2ca50" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg2)"/>
+  <g transform="translate(200 210)">
+    <path d="M-60 -90 Q-60 -20 0 0 Q60 -20 60 -90 Z" fill="url(#wine)" opacity="0.85"/>
+    <path d="M-60 -90 Q-60 -20 0 0 Q60 -20 60 -90 Z" fill="none" stroke="url(#glass)" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-88" rx="60" ry="8" fill="none" stroke="url(#glass)" stroke-width="1.5"/>
+    <path d="M0 0 L0 85" stroke="url(#glass)" stroke-width="1.5" fill="none"/>
+    <ellipse cx="0" cy="88" rx="50" ry="6" fill="none" stroke="url(#glass)" stroke-width="1.5"/>
+    <path d="M-50 88 Q-52 90 -50 92 L50 92 Q52 90 50 88" fill="none" stroke="url(#glass)" stroke-width="1"/>
+    <ellipse cx="-30" cy="-70" rx="8" ry="20" fill="#fff" opacity="0.08"/>
+  </g>
+  <g fill="#d4af37" opacity="0.5">
+    <circle cx="170" cy="120" r="1"/>
+    <circle cx="230" cy="140" r="1"/>
+    <circle cx="200" cy="155" r="0.8"/>
+  </g>
+  <g stroke="#d4af37" stroke-width="1" fill="none" opacity="0.25">
+    <path d="M20 20 L40 20 M20 20 L20 40"/>
+    <path d="M380 20 L360 20 M380 20 L380 40"/>
+    <path d="M20 380 L40 380 M20 380 L20 360"/>
+    <path d="M380 380 L360 380 M380 380 L380 360"/>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Интерьер ресторана">
+  <defs>
+    <radialGradient id="bg3" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#4a2a14"/>
+      <stop offset="50%" stop-color="#1a120a"/>
+      <stop offset="100%" stop-color="#0c0a08"/>
+    </radialGradient>
+    <radialGradient id="lamp" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff3c9"/>
+      <stop offset="30%" stop-color="#f2ca50"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow3"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg3)"/>
+  <!-- Hanging pendants -->
+  <g>
+    <line x1="100" y1="0" x2="100" y2="80" stroke="#3a2a1a" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="60" stroke="#3a2a1a" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="80" stroke="#3a2a1a" stroke-width="1"/>
+    <circle cx="100" cy="100" r="30" fill="url(#lamp)" filter="url(#glow3)"/>
+    <circle cx="200" cy="80" r="35" fill="url(#lamp)" filter="url(#glow3)"/>
+    <circle cx="300" cy="100" r="30" fill="url(#lamp)" filter="url(#glow3)"/>
+    <circle cx="100" cy="100" r="12" fill="#d4af37" opacity="0.9"/>
+    <circle cx="200" cy="80" r="14" fill="#f2ca50"/>
+    <circle cx="300" cy="100" r="12" fill="#d4af37" opacity="0.9"/>
+  </g>
+  <!-- Tables -->
+  <g opacity="0.7">
+    <rect x="60" y="250" width="100" height="40" fill="#2a1a10" rx="2"/>
+    <rect x="240" y="250" width="100" height="40" fill="#2a1a10" rx="2"/>
+    <circle cx="110" cy="265" r="5" fill="#d4af37" opacity="0.6"/>
+    <circle cx="290" cy="265" r="5" fill="#d4af37" opacity="0.6"/>
+    <rect x="105" y="260" width="10" height="18" fill="#f2ca50" opacity="0.5"/>
+    <rect x="285" y="260" width="10" height="18" fill="#f2ca50" opacity="0.5"/>
+  </g>
+  <!-- Chairs silhouettes -->
+  <g fill="#1a120a" opacity="0.9">
+    <rect x="50" y="290" width="20" height="50" rx="2"/>
+    <rect x="150" y="290" width="20" height="50" rx="2"/>
+    <rect x="230" y="290" width="20" height="50" rx="2"/>
+    <rect x="330" y="290" width="20" height="50" rx="2"/>
+  </g>
+  <g stroke="#d4af37" stroke-width="1" fill="none" opacity="0.25">
+    <path d="M20 20 L40 20 M20 20 L20 40"/>
+    <path d="M380 20 L360 20 M380 20 L380 40"/>
+    <path d="M20 380 L40 380 M20 380 L20 360"/>
+    <path d="M380 380 L360 380 M380 380 L380 360"/>
+  </g>
+</svg>

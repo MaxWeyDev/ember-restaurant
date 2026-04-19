@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Десерт">
+  <defs>
+    <radialGradient id="bg4" cx="50%" cy="55%" r="65%">
+      <stop offset="0%" stop-color="#3a2a1a"/>
+      <stop offset="100%" stop-color="#0c0a08"/>
+    </radialGradient>
+    <linearGradient id="choc" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5a3a20"/>
+      <stop offset="100%" stop-color="#2a1a0a"/>
+    </linearGradient>
+    <radialGradient id="caramel" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#f2ca50"/>
+      <stop offset="100%" stop-color="#8a5a1a"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg4)"/>
+  <ellipse cx="200" cy="290" rx="150" ry="18" fill="#d4af37" opacity="0.1"/>
+  <ellipse cx="200" cy="290" rx="130" ry="28" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.5"/>
+  <!-- Chocolate dome -->
+  <g transform="translate(200 270)">
+    <ellipse cx="0" cy="0" rx="70" ry="18" fill="url(#choc)"/>
+    <path d="M-70 0 Q-70 -80 0 -80 Q70 -80 70 0 Z" fill="url(#choc)"/>
+    <path d="M-70 0 Q-70 -80 0 -80 Q70 -80 70 0" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.5"/>
+    <ellipse cx="-20" cy="-50" rx="15" ry="25" fill="#fff" opacity="0.08"/>
+    <!-- Caramel drip -->
+    <path d="M-30 -60 Q-25 -30 -30 0 Q-20 10 -10 5" fill="url(#caramel)" opacity="0.85"/>
+    <path d="M20 -70 Q30 -40 25 -10" fill="url(#caramel)" opacity="0.7"/>
+  </g>
+  <!-- Sauce drops on plate -->
+  <g fill="#d4af37" opacity="0.8">
+    <circle cx="120" cy="300" r="3"/>
+    <circle cx="135" cy="305" r="2"/>
+    <circle cx="270" cy="305" r="3"/>
+    <circle cx="285" cy="300" r="2"/>
+  </g>
+  <!-- Mint leaves -->
+  <g fill="#4a7a2a" opacity="0.8">
+    <path d="M195 195 Q185 200 185 215 Q195 220 200 210 Z"/>
+    <path d="M205 200 Q215 208 210 220 Q200 218 202 205 Z"/>
+  </g>
+  <g stroke="#d4af37" stroke-width="1" fill="none" opacity="0.25">
+    <path d="M20 20 L40 20 M20 20 L20 40"/>
+    <path d="M380 20 L360 20 M380 20 L380 40"/>
+    <path d="M20 380 L40 380 M20 380 L20 360"/>
+    <path d="M380 380 L360 380 M380 380 L380 360"/>
+  </g>
+</svg>

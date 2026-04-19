@@ -1,0 +1,14 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Claude local
+.claude/settings.local.json
+
+# Node / misc (на будущее)
+node_modules/
+.env
+.env.local
